@@ -77,3 +77,5 @@ vs 절대경로/ 풀 경로를 적어줌 pwd: /c/Users/1-14/Desktop/DAMF2/TIL
 
 폴더는 파란색/, 파일은 흰색
 . : 현재 폴더
+
+[출처](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
