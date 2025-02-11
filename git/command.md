@@ -2,10 +2,10 @@
 
 ## `git init`
 
-- 현재 디렉토리에 `.git` 폴더를 생성하여 새로운 Git 저장소를 초기화
+- 현재 디렉토리에 `.git` 폴더를 생성하여 새로운 git 저장소를 초기화
 
 
-- pwd: 현재 나의 위치 확인
+- `pwd`: 현재 나의 위치 확인
 
 ## `git clone`
 
@@ -32,6 +32,9 @@ git add . => 현재 나의 위치를 기준으로 모든 파일과 폴더
 ## `git commit`
 
 - stage area에 있는 변경사항을 커밋하여 스냅샷 생성
+```
+git commit -m "{commit}"
+```
 
 ## `git log`
 
