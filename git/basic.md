@@ -23,7 +23,7 @@
 
 ## 기타
 
-- [][]: optional
+- [ ][ ]: optional
 - config: configuration 초기 설정하기
 - global(전역, 컴퓨터 전체) vs local
 - `rm -rf` 
