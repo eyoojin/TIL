@@ -60,7 +60,7 @@ command [option] [arguments]
 - options
     - `-r` : 디렉토리와 그 내용을 재귀적으로 삭제
 ---
-    - recursive
+-  recursive
 
 ### cat (concatenate)
 
