@@ -64,7 +64,9 @@ console.log("hello")
 - 두번째
 - 세번째
 
-# 기타
+ [출처](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## 기타
 
 - 상세한 내용은 slack 링크 타고 들어가서 보기
 - [x] 할일목록
@@ -72,5 +74,3 @@ console.log("hello")
 - 마크다운 문법: 노션, 옵시디언 등에 모두 적용
 - 폴더는 파란색/, 파일은 흰색
 - .: 현재 폴더
-
-[출처](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
