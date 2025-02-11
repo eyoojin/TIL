@@ -5,7 +5,6 @@
 ```
 command [option] [arguments]
 ```
-
 - command: 실행할 명령어, 프로그램
 - options: 명령어의 옵션. 주로 -로 표시됨
 - arguments: 명령어에 전달할 인자
