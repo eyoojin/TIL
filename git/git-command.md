@@ -76,3 +76,18 @@ git push origin master
 git pull {remote_name} {branch_name}
 git pull origin master
 ```
+
+## `git branch`
+
+- `git branch`: branch 목록 확인
+- `git branch {branch_name}`: branch 생성
+- `git branch -d {branch_name}`: branch 삭제
+
+## `git switch`
+
+- `git chechout {branch_name}`: branch_name으로 이동
+- `git switch {branch_name}`: branch_name으로 이동 (최신 명령어)
+
+## `git merge`
+
+- `git merge {target_branch_name}`: 현재 branch로 target_branch_name을 가져와서 병합
