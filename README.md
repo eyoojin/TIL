@@ -15,7 +15,7 @@
 - git
 - python
     1. intro
-    2. control of flow
+    2. control of flow //
     3. function
     4. data structure
     5. module
