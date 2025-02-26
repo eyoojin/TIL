@@ -22,3 +22,5 @@
     6. errors
     7. OOP
     8. movie data
+- pandas
+    0. numpy
