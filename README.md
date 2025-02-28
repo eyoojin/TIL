@@ -11,9 +11,13 @@
 ## 목차
 
 - linux
+
 - markdown
+
 - git
+
 - python
+
     1. intro
     2. control of flow //
     3. function
@@ -22,7 +26,9 @@
     6. errors
     7. OOP
     8. movie data
-- pandas
+
+- pandas 
+    
     0. numpy
     1. datastructure
     2. file load save
