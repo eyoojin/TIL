@@ -32,3 +32,9 @@
     0. numpy
     1. datastructure
     2. file load save
+    3. query
+    4. statistics
+    5. missing value
+    6. preprocessing
+    7. group
+    8. concat
