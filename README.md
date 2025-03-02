@@ -19,8 +19,8 @@
 - python
 
     1. intro
-    2. control of flow //
-    3. function
+    2. control of flow
+    3. function //
     4. data structure
     5. module
     6. errors
