@@ -38,3 +38,4 @@
     6. preprocessing
     7. group
     8. concat
+    9. pandas practice
