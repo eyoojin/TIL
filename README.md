@@ -22,7 +22,7 @@
     2. control of flow
     3. function 
     4. data structure 
-    5. module //
+    5. module
     6. errors
     7. OOP
     8. movie data
