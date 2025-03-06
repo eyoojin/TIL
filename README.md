@@ -39,3 +39,5 @@
     7. group
     8. concat
     9. pandas practice
+
+- machine learning
