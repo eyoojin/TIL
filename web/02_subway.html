@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subway</title>
+</head>
+<body>
+    <form action="">
+        <!-- 이름 -->
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <!-- 날짜 -->
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date">
+        </div>
+        <hr>
+
+        <!-- 샌드위치 선택 -->
+        <h3>Sandwich</h3>
+        <input type="radio" name="menu" value="egg" id="egg">
+        <label for="egg">Egg mayo</label>
+        <input type="radio" name="menu" value="blt" id="blt">
+        <label for="blt">BLT</label>
+        <hr>
+
+        <!-- 빵 사이즈 -->
+        <h3>Size</h3>
+        <input type="number" min="15" max="30" step="15" name="size">
+        <hr>
+
+        <!-- 빵 종류 -->
+        <h3>Bread</h3>
+        <select name="bread" id="">
+            <option value="honey">Honey oat</option>
+            <option value="flat">Flat</option>
+        </select>
+        <hr>
+
+        <!-- 야채 -->
+        <h3>Vegetable</h3>
+        <input type="checkbox" id="1" name="cu">
+        <label for="1">Cucumber</label>
+        <input type="checkbox" id="2" name="to">
+        <label for="2">Tomato</label>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

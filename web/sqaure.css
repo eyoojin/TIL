@@ -1,0 +1,17 @@
+div.square {
+    background-color: royalblue;
+    width: 100px;
+    height: 100px;
+}
+
+.border {
+    border-style: solid;
+    border-width: 3px;
+}
+
+.margin {
+    /* margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px; */
+    margin: 5px 10px 15px 20px;
+}
