@@ -41,3 +41,11 @@
     9. pandas practice
 
 - machine learning
+
+- web
+
+    0. html
+    1. form
+    2. subway
+    3. css
+    4. bootstrap
