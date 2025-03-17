@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>당신의 행운 번호는</h1>
+    <p>{{drwno}}회차의 당첨번호 {{lotto_win}} + {{bonus_num}}와(과) 비교하면</p>
+
+    {% for key, value in lotto_result.items %}
+        <div>
+            {{value.numbers}}은(는) {{value.ranking}}
+        </div>
+    {% endfor%}
+
+</body>
+</html>
