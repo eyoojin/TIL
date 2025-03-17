@@ -40,7 +40,10 @@
     8. concat
     9. pandas practice
 
-- machine learning
+- machine learning (hongong machine)
+
+    1. my first machine learning
+    2. handling data
 
 - web
 
@@ -49,3 +52,7 @@
     2. subway
     3. css
     4. bootstrap
+
+- django
+
+    1. first_pjt
