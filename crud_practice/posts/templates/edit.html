@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>수정하는 중...🧀</h1>
+    <form action="/posts/{{post.id}}/update/">
+        <label> 제목 :
+            <input type="text" name="title" value="{{post.title}}">
+        </label>
+        <br>
+        <label> 내용 :
+            <input type="text" name="content" value="{{post.content}}">
+        </label>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
