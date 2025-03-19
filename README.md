@@ -56,3 +56,4 @@
 - django
 
     1. first_pjt
+    2. crud
