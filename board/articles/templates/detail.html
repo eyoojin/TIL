@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <div class="card">
+    <div class="card mt-2">
         <div class="card-header">
             {{article.title}}
         </div>
@@ -12,4 +12,5 @@
             {{article.created_at}}
         </div>
     </div>
+    <a href="{% url 'articles:delete' article.id %}" class="btn btn-light mt-2">삭제🦝</a>
 {% endblock %}
