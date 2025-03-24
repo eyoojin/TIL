@@ -59,3 +59,4 @@
     2. crud
     3. board
     4. modelForm
+    5. 1:N
