@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">User</th>
+                <th scope="col">Title</th>
+                <th scope="col">Content</th>
+                <th scope="col">Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+            <tr>
+                <td>{{article.user}}</td>
+                <td>{{article.title}}</td>
+                <td>{{article.content}}</td>
+                <td>
+                    <a href="{% url 'articles:detail' article.id %}">🔍</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
