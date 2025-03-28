@@ -1,15 +1,60 @@
 {% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
 {% block body %}
-    <div class="card">
-        <div class="card-body">
+    <div class="card mb-3">
+        <div class="card-header">
             <h5 class="card-title">{{article.title}}</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">{{article.user}}</h6>
+            <a href="{% url 'accounts:profile' article.user %}" class="card-subtitle mb-2 text-body-secondary">{{article.user}}</a>
+        </div>
+        <div class="card-body">
             <p class="card-text">{{article.content}}</p>
-            {% if user.is_authenticated and user == article.user %}
-                <a href="{% url 'articles:update' article.id %}" class="card-link">Update</a>
-                <a href="{% url 'articles:delete' article.id %}" class="card-link">Delete</a>
+            {% if user == article.user %}
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">(๑'ᵕ'๑)⸝*</a>
+              
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'articles:update' article.id %}">Update</a></li>
+                    <li><a class="dropdown-item" href="{% url 'articles:delete' article.id %}">Delete</a></li>
+                </ul>
+            </div>
             {% endif %}
         </div>
     </div>
+
+    <form action="{% url 'articles:comment_create' article.id %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_label "Comment" label_for="id_content" %}
+        {% bootstrap_form form show_label=False %}
+        <input type="submit" value="Submit" class="btn btn-secondary">
+    </form>
+    <hr>
+    {% for comment in article.comment_set.all %}
+        <div class="card mb-3">
+            <div class="card-header">
+                {{comment.user}}
+            </div>
+            
+            <div class="card-body">
+                {{comment.content}}
+            </div>
+            <div class="card-body">
+                {% if user == comment.user %}
+                <a href="{% url 'articles:comment_delete' article.id comment.id %}" class="btn btn-secondary">Delete</a>
+                {% endif %}
+                <hr>
+                <ul class="list-group list-group-flush">
+                    {% for reply in comment.reply_set.all %}
+                        <li class="list-group-item">{{reply.content}}</li>
+                    {% endfor %}
+                </ul>
+                <form action="{% url 'articles:reply_create' article.id comment.id %}" method="POST">
+                     {% csrf_token %}
+                     {% bootstrap_form form2 show_label=False %}
+                     <input type="submit" class="btn btn-secondary" value="Submit">
+                </form>
+            </div>
+        </div>
+    {% endfor %}
+
 {% endblock %}
