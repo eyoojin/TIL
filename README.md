@@ -61,3 +61,4 @@
     4. modelForm
     5. 1:N
     6. auth
+    7. insta
