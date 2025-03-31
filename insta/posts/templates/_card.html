@@ -1,0 +1,13 @@
+<div class="card p-0 my-3 col-12 col-md-6 col-xl-4">
+    <div class="card-header">
+        <img class="rounded-circle" src="{{post.user.profile_image.url}}" alt="" width="30px">
+        <a href="">
+            {{post.user.username}}
+        </a>
+    </div>
+    <img src="{{post.image.url}}" alt="">
+    <div class="card-body">
+        <p class="card-text">{{post.content}}</p>
+        <p class="card-text">{{post.created_at|timesince}} ago</p>
+    </div>
+</div>
