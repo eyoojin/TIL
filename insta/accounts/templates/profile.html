@@ -13,7 +13,14 @@
                 {% if user != user_profile %}
                 <div class="col-3">
                     {% if user in user_profile.followers.all %}
-                        <a href="{% url 'accounts:follow' user_profile.username %}" class="btn btn-outline-warning">unfollow</a>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Following
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'accounts:follow' user_profile.username %}">unfollow</a></li>
+                            </ul>
+                        </div>
                     {% else %}
                         <a href="{% url 'accounts:follow' user_profile.username %}" class="btn btn-outline-warning">follow</a>
                     {% endif %}
@@ -25,7 +32,7 @@
                     posts {{user_profile.post_set.all|length}}
                 </div>
                 <div class="col-3">
-                    followers {{user_profile.followers.all|length}}
+                    followers {{user_profile.followers.all|length}}                    
                 </div>
                 <div class="col-3">
                     followings {{user_profile.followings.all|length}}

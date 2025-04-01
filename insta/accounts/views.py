@@ -61,3 +61,13 @@ def follow(request, username):
         you.followers.add(me)
 
     return redirect('accounts:profile', username)
+
+# def follower_list(request, username):
+#     target = User.objects.get(username=username)
+#     followers = User.followers.all()
+
+#     context = {
+#         'followers': followers,
+#     }
+
+#     return render(request, 'follow.html', context)
