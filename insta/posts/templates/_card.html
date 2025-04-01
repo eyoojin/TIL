@@ -1,13 +1,46 @@
-<div class="card p-0 my-3 col-12 col-md-6 col-xl-4">
+{% load django_bootstrap5 %}
+
+<div class="card p-0 my-3 col-12 offset-md-3 col-md-6">
     <div class="card-header">
         <img class="rounded-circle" src="{{post.user.profile_image.url}}" alt="" width="30px">
-        <a href="">
+        <a href="{% url 'accounts:profile' post.user.username %}" class="text-reset text-decoration-none">
             {{post.user.username}}
         </a>
     </div>
     <img src="{{post.image.url}}" alt="">
     <div class="card-body">
+        <a href="{% url 'posts:like' post.id %}" class="text-reset text-decoration-none">
+            {% if user in post.like_users.all %}
+                <i class="bi bi-heart-fill" style="color: red;"></i>
+            {% else %}
+                <i class="bi bi-heart"></i>
+            {% endif %}
+        </a>
+        <span>{{post.like_users.all|length}} likes</span>
         <p class="card-text">{{post.content}}</p>
         <p class="card-text">{{post.created_at|timesince}} ago</p>
+    </div>
+    {% for comment in post.comment_set.all %}
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>{{comment.user}}</strong>
+            {{comment.comment}}
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="card-footer">
+        {% if user.is_authenticated %}
+        <form action="{% url 'posts:comment_create' post.id %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-9">
+                    {% bootstrap_form form show_label=False wrapper_class='' %}
+                </div>
+                <div class="col-2">
+                    <input class="btn btn-outline-warning" type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+        {% endif %}
     </div>
 </div>
