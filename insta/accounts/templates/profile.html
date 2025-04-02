@@ -31,19 +31,27 @@
                 <div class="col-3">
                     posts {{user_profile.post_set.all|length}}
                 </div>
-                <div class="col-3">
-                    followers {{user_profile.followers.all|length}}                    
+                <div class="col-3">                   
+                    <a class="text-reset text-decoration-none" href="" data-bs-toggle="modal" data-bs-target="#modal1">
+                        followers {{user_profile.followers.all|length}}
+                    </a>
                 </div>
+                {% include '_modal1.html' %}
                 <div class="col-3">
-                    followings {{user_profile.followings.all|length}}
+                    <a class="text-reset text-decoration-none" href="" data-bs-toggle="modal" data-bs-target="#modal2">
+                        followings {{user_profile.followings.all|length}}
+                    </a>
                 </div>
+                {% include '_modal2.html' %}
             </div>
         </div>
     </div>
     <div class="row">
         {% for post in user_profile.post_set.all %}
             <div class="col-4 p-0">
-                <img src="{{post.image.url}}" class="img-fluid" alt="">
+                <a href="">
+                    <img src="{{post.image.url}}" class="img-fluid" alt="">
+                </a>
             </div>
         {% endfor %}
     </div>

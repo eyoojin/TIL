@@ -87,3 +87,5 @@ def like_async(request, id):
     }
     
     return JsonResponse(context)
+
+# def detail(request, post_id):

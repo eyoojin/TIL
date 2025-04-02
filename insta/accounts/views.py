@@ -40,9 +40,13 @@ def logout(request):
 
 def profile(request, username):
     user_profile = User.objects.get(username=username)
+    followers = user_profile.followers.all()
+    followings = user_profile.followings.all()
 
     context = {
         'user_profile': user_profile,
+        'followers': followers,
+        'followings': followings,
     }
 
     return render(request, 'profile.html', context)
@@ -61,13 +65,3 @@ def follow(request, username):
         you.followers.add(me)
 
     return redirect('accounts:profile', username)
-
-# def follower_list(request, username):
-#     target = User.objects.get(username=username)
-#     followers = User.followers.all()
-
-#     context = {
-#         'followers': followers,
-#     }
-
-#     return render(request, 'follow.html', context)

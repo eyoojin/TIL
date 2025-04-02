@@ -1,8 +1,0 @@
-{% extends 'base.html' %}
-{% load django_bootstrap5 %}
-
-{% block body %}
-    {% for follower in followers %}
-        <li>{{follower}}</li>
-    {% endfor %}
-{% endblock %}
