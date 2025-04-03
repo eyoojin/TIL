@@ -18,47 +18,48 @@
 
 - python
 
-    1. intro
-    2. control of flow
-    3. function 
-    4. data structure 
-    5. module
-    6. errors
-    7. OOP
-    8. movie data
+1. intro
+2. control of flow
+3. function 
+4. data structure 
+5. module
+6. errors
+7. OOP
+8. movie data
 
 - pandas 
     
-    0. numpy
-    1. datastructure
-    2. file load save
-    3. query
-    4. statistics
-    5. missing value
-    6. preprocessing
-    7. group
-    8. concat
-    9. pandas practice
+0. numpy
+1. datastructure
+2. file load save
+3. query
+4. statistics
+5. missing value
+6. preprocessing
+7. group
+8. concat
+9. pandas practice
 
 - machine learning (hongong machine)
 
-    1. my first machine learning
-    2. handling data
+1. my first machine learning
+2. handling data
 
 - web
 
-    0. html
-    1. form
-    2. subway
-    3. css
-    4. bootstrap
+0. html
+1. form
+2. subway
+3. css
+4. bootstrap
 
 - django
 
-    1. first_pjt
-    2. crud
-    3. board
-    4. modelForm
-    5. 1:N
-    6. auth
-    7. insta
+1. first_pjt
+2. crud
+3. board
+4. modelForm
+5. 1:N
+6. auth
+7. insta
+8. sql-orm
