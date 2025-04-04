@@ -49,10 +49,11 @@
     <div class="row">
         {% for post in user_profile.post_set.all %}
             <div class="col-4 p-0">
-                <a href="">
+                <!-- <a href="" data-bs-toggle="modal" data-bs-target="#detail"> -->
                     <img src="{{post.image.url}}" class="img-fluid" alt="">
                 </a>
             </div>
+            
         {% endfor %}
     </div>
 {% endblock %}

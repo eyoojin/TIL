@@ -89,3 +89,12 @@ def like_async(request, id):
     return JsonResponse(context)
 
 # def detail(request, post_id):
+#     post = Post.objects.get(id=post_id)
+#     form = CommentForm()
+
+#     context = {
+#         'post': post,
+#         'form': form,
+#     }
+
+#     return render(request, 'detail.html', context)
