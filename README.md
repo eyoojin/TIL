@@ -10,13 +10,13 @@
 
 ## 목차
 
-- linux
+### linux
 
-- markdown
+### markdown
 
-- git
+### git
 
-- python
+### python
 
 1. intro
 2. control of flow
@@ -27,7 +27,7 @@
 7. OOP
 8. movie data
 
-- pandas 
+### pandas 
     
 0. numpy
 1. datastructure
@@ -40,12 +40,12 @@
 8. concat
 9. pandas practice
 
-- machine learning (hongong machine)
+### machine learning (hongong machine)
 
 1. my first machine learning
 2. handling data
 
-- web
+### web
 
 0. html
 1. form
@@ -53,7 +53,7 @@
 3. css
 4. bootstrap
 
-- django
+### django
 
 1. first_pjt
 2. crud
@@ -64,7 +64,7 @@
 7. insta
 8. sql-orm
 
-- hadoop
+### hadoop
 
 0. wordcount
 1. movie-rate-avg
