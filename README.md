@@ -63,3 +63,9 @@
 6. auth
 7. insta
 8. sql-orm
+
+- hadoop
+
+0. wordcount
+1. movie-rate-avg
+2. log-time
