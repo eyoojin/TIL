@@ -501,3 +501,110 @@ def profile(request, username):
     {% endfor %}
 {% endblock %}
 ```
+
+
+# 요약
+
+0. .gitignore
+    - 가상환경 생성/활성화
+    - django 설치
+    - .gitignore 설정
+
+1. startproject
+
+2. startapp
+    - 앱 등록
+
+3. base.html
+    - template 등록
+
+## bootstrap
+4. django-bootstrap5
+    - 설치
+    - 앱 등록
+    - html에 load
+
+## 회원가입
+5. User modeling/migration
+    - from django.contrib.auth.models import AbstractUser
+    - AUTH_USER_MODEL 등록
+
+6. Signup - Create
+    - 경로 설정
+    - from django.contrib.auth.forms import UserCreationForm
+    - 함수 생성
+    - 페이지 생성
+
+7. Login - Create
+    - 경로 설정
+    - from django.contrib.auth.forms    import AuthenticationForm
+    - from django.contrib.auth import login as auth_login
+    - 페이지 생성
+
+8. Logout - Delete
+    - from django.contrib.auth import logout as auth_logout
+
+9. Navbar - If
+
+## 게시물
+10. startapp
+    - 앱 등록
+
+11. Article modeling/migration
+    - from django.conf import settings
+    - ForeignKey
+
+12. Article - Create
+    - 경로 설정
+    - Form
+    - 함수 생성
+    - 페이지 생성
+
+13. Article - Read
+    - 경로 설정
+    - 함수 생성
+    - 페이지 생성
+
+14. login_required
+    - from django.contrib.auth.decorators import login_required
+
+15. next 인자 처리하기
+
+16. Article - Delete
+    - 경로 설정
+    - html 로그인한 사용자 == 게시글 작성자 if
+    - 함수 if
+
+17. Article - Update
+    - 버튼 추가
+    - 경로 설정
+    - 기존 정보 출력
+    - 페이지 생성
+    - 새로운 정보 저장
+    - 함수 if 현재 로그인한 사람 != 게시물 작성자
+
+## 댓글
+18. Comment modeling/migration
+    - ForeignKey
+
+19. Comment - Create
+    - CommentForm 정의/ 불러오기/ 인스턴스화
+    - action 설정
+    - 경로 설정
+    - 함수 생성
+
+20. Comment - Read
+    - html에서 _set.all 함수 사용
+
+21. Comment - Delete
+    - 버튼 생성
+    - 경로 설정
+    - 함수 생성
+    - 댓글 작성자 == 삭제 html/ 함수
+
+## profile
+22. user profile
+    - 버튼 생성
+    - 경로 설정
+    - 함수 생성
+    - 페이지 생성
