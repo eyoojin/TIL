@@ -69,3 +69,5 @@
 0. wordcount
 1. movie-rate-avg
 2. log-time
+
+### hive
