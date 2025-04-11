@@ -55,3 +55,20 @@ LIMIT 10;
 
 - 테이블 삭제 `DROP TABLE employees;`
     - HDFS에 올라간 파일도 같이 삭제
+
+# DBeaver 사용
+
+## 서버 실행
+- 하둡 실행
+    - `~/hadoop-3.3.6/sbin/start-all.sh `
+- 하이브 서버 실행
+    - `hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=DEBUG,console`
+
+## employees
+```bash
+hdfs dfs -mkdir -p /TIL/input/employees
+hdfs dfs -mkdir -p /TIL/input/departments
+
+hdfs dfs -put ~/damf2/data/employees /TIL/input/employees
+hdfs dfs -put ~/damf2/data/departments /TIL/input/departments
+```
