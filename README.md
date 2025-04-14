@@ -8,15 +8,15 @@
 
 글로벌소프트웨어캠퍼스와 동아일보가 함께 진행하는 챌린지입니다.
 
-## 목차
+# 목차
 
-### linux
----
-### markdown
----
-### git
----
-### python
+## linux
+
+## markdown
+
+## git
+
+## python
 
 1. intro
 2. control of flow
@@ -26,8 +26,8 @@
 6. errors
 7. OOP
 8. movie data
----
-### pandas 
+
+## pandas 
     
 0. numpy
 1. datastructure
@@ -39,13 +39,13 @@
 7. group
 8. concat
 9. pandas practice
----
-### machine learning (hongong machine)
+
+## machine learning (hongong machine)
 
 1. my first machine learning
 2. handling data
----
-### web
+
+## web
 
 0. html
 1. form
@@ -53,7 +53,7 @@
 3. css
 4. bootstrap
 ---
-### django
+## django
 
 #### first_pjt
 #### crud
@@ -64,7 +64,7 @@
 #### insta
 #### sql-orm
 ---
-### hadoop
+## hadoop
 
 #### hadoop
 #### hive
