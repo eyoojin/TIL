@@ -55,21 +55,17 @@
 
 ### django
 
-1. first_pjt
-2. crud
-3. board
-4. modelForm
-5. 1:N
-6. auth
-7. insta
-8. sql-orm
+#### 1. first_pjt
+#### 2. crud
+#### 3. board
+#### 4. modelForm
+#### 5. 1:N
+#### 6. auth
+#### 7. insta
+#### 8. sql-orm
 
 ### hadoop
 
-0. wordcount
-1. movie-rate-avg
-2. log-time
-
-### hive
-1. employees
-2. book
+#### 0. hadoop
+#### 1. hive
+#### 2. automation
